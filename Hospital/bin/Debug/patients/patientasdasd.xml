@@ -1,0 +1,12 @@
+﻿<PatientInfo>
+  <Name>asdasd</Name>
+  <BirthDate />
+  <Gender />
+  <PhoneNumber />
+  <InsuranceInfo>
+    <InsuranceID />
+    <InsuranceGroupID />
+    <InsuranceType />
+    <InsuranceProvider />
+  </InsuranceInfo>
+</PatientInfo>

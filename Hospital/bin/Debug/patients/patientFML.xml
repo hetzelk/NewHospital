@@ -1,0 +1,13 @@
+﻿<PatientInfo>
+  <Name>FML</Name>
+  <PatientID>asdasd</PatientID>
+  <BirthDate>sdasd</BirthDate>
+  <Gender>Female</Gender>
+  <PhoneNumber>asdasd</PhoneNumber>
+  <InsuranceInfo>
+    <InsuranceID />
+    <InsuranceGroupID />
+    <InsuranceType />
+    <InsuranceProvider />
+  </InsuranceInfo>
+</PatientInfo>

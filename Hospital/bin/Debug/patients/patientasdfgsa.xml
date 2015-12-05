@@ -1,0 +1,13 @@
+﻿<PatientInfo>
+  <Name>asdfgsa</Name>
+  <PatientID>a</PatientID>
+  <BirthDate>a</BirthDate>
+  <Gender>Female</Gender>
+  <PhoneNumber>a</PhoneNumber>
+  <InsuranceInfo>
+    <InsuranceID>a</InsuranceID>
+    <InsuranceGroupID>a</InsuranceGroupID>
+    <InsuranceType>a</InsuranceType>
+    <InsuranceProvider>a</InsuranceProvider>
+  </InsuranceInfo>
+</PatientInfo>
