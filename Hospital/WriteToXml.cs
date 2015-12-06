@@ -37,12 +37,11 @@ namespace Hospital
 
         public void writeToXml()
         {
-            var path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + string.Format("//patient{0}.xml", name);
+            var path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + string.Format("//patient{0}.xml", patientid);
             FileStream file = File.Create(path);
 
             XmlTextWriter xWriter = new XmlTextWriter(file, Encoding.UTF8);
             xWriter.Formatting = Formatting.Indented;
-
             xWriter.WriteStartElement("PatientInfo");
             xWriter.WriteStartElement("Name");
             xWriter.WriteString(name);
@@ -63,8 +62,7 @@ namespace Hospital
             xWriter.WriteStartElement("PhoneNumber");
             xWriter.WriteString(phonenumber);
             xWriter.WriteEndElement();
-
-            xWriter.WriteStartElement("InsuranceInfo");
+            
             xWriter.WriteStartElement("InsuranceID");
             xWriter.WriteString(insuranceid);
             xWriter.WriteEndElement();
@@ -80,31 +78,14 @@ namespace Hospital
             xWriter.WriteStartElement("InsuranceProvider");
             xWriter.WriteString(insuranceprovider);
             xWriter.WriteEndElement();
-            xWriter.WriteEndElement();//end insurance info
-
-            xWriter.WriteEndElement();//end patient info
+            xWriter.WriteEndElement();
 
             xWriter.Close();
+
+
 
             //have an entirely new section to look at all the previous appontments that that specific patient has had.
             //include the symptoms, doctor, date-time, diagnosis, outcome
         }
     }
 }
-
-/*
-XmlDocument xmlDoc= new XmlDocument(); // Create an XML document object
-xmlDoc.Load("yourXMLFile.xml"); // Load the XML document from the specified file
-
-// Get elements
-XmlNodeList girlAddress = xmlDoc.GetElementsByTagName("gAddress");
-XmlNodeList girlAge = xmlDoc.GetElementsByTagName("gAge"); 
-XmlNodeList girlCellPhoneNumber = xmlDoc.GetElementsByTagName("gPhone");
-
-// Display the results
-Console.WriteLine("Address: " + girlAddress[0].InnerText);
-Console.WriteLine("Age: " + girlAge[0].InnerText);
-Console.WriteLine("Phone Number: " + girlCellPhoneNumber[0].InnerText);
-
-
-    */

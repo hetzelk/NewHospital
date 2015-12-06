@@ -48,6 +48,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxPatientID = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.buttonLoadCreatedPatient = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // radioFemale
@@ -56,7 +57,7 @@
             this.radioFemale.Location = new System.Drawing.Point(225, 96);
             this.radioFemale.Name = "radioFemale";
             this.radioFemale.Size = new System.Drawing.Size(75, 21);
-            this.radioFemale.TabIndex = 20;
+            this.radioFemale.TabIndex = 5;
             this.radioFemale.TabStop = true;
             this.radioFemale.Text = "Female";
             this.radioFemale.UseVisualStyleBackColor = true;
@@ -67,7 +68,7 @@
             this.radioMale.Location = new System.Drawing.Point(160, 96);
             this.radioMale.Name = "radioMale";
             this.radioMale.Size = new System.Drawing.Size(59, 21);
-            this.radioMale.TabIndex = 19;
+            this.radioMale.TabIndex = 4;
             this.radioMale.TabStop = true;
             this.radioMale.Text = "Male";
             this.radioMale.UseVisualStyleBackColor = true;
@@ -77,7 +78,7 @@
             this.textBoxPhone.Location = new System.Drawing.Point(157, 124);
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.Size = new System.Drawing.Size(213, 22);
-            this.textBoxPhone.TabIndex = 18;
+            this.textBoxPhone.TabIndex = 6;
             // 
             // label4
             // 
@@ -102,7 +103,7 @@
             this.textBoxBirthDate.Location = new System.Drawing.Point(157, 68);
             this.textBoxBirthDate.Name = "textBoxBirthDate";
             this.textBoxBirthDate.Size = new System.Drawing.Size(213, 22);
-            this.textBoxBirthDate.TabIndex = 15;
+            this.textBoxBirthDate.TabIndex = 3;
             // 
             // label2
             // 
@@ -118,7 +119,7 @@
             this.textBoxName.Location = new System.Drawing.Point(157, 12);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(213, 22);
-            this.textBoxName.TabIndex = 13;
+            this.textBoxName.TabIndex = 1;
             // 
             // label1
             // 
@@ -134,16 +135,16 @@
             this.textBoxInsuranceType.Location = new System.Drawing.Point(176, 243);
             this.textBoxInsuranceType.Name = "textBoxInsuranceType";
             this.textBoxInsuranceType.Size = new System.Drawing.Size(194, 22);
-            this.textBoxInsuranceType.TabIndex = 31;
+            this.textBoxInsuranceType.TabIndex = 9;
             // 
             // buttonCreateFile
             // 
             this.buttonCreateFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonCreateFile.Location = new System.Drawing.Point(202, 304);
+            this.buttonCreateFile.Location = new System.Drawing.Point(12, 304);
             this.buttonCreateFile.Name = "buttonCreateFile";
             this.buttonCreateFile.Size = new System.Drawing.Size(168, 37);
             this.buttonCreateFile.TabIndex = 30;
-            this.buttonCreateFile.Text = "Create Patient File";
+            this.buttonCreateFile.Text = "Commit Patient Info.";
             this.buttonCreateFile.UseVisualStyleBackColor = true;
             this.buttonCreateFile.Click += new System.EventHandler(this.buttonCreateFile_Click);
             // 
@@ -152,7 +153,7 @@
             this.textBoxInsuranceProvider.Location = new System.Drawing.Point(176, 271);
             this.textBoxInsuranceProvider.Name = "textBoxInsuranceProvider";
             this.textBoxInsuranceProvider.Size = new System.Drawing.Size(194, 22);
-            this.textBoxInsuranceProvider.TabIndex = 28;
+            this.textBoxInsuranceProvider.TabIndex = 10;
             // 
             // label5
             // 
@@ -177,7 +178,7 @@
             this.textBoxInsuranceGroupID.Location = new System.Drawing.Point(176, 215);
             this.textBoxInsuranceGroupID.Name = "textBoxInsuranceGroupID";
             this.textBoxInsuranceGroupID.Size = new System.Drawing.Size(194, 22);
-            this.textBoxInsuranceGroupID.TabIndex = 25;
+            this.textBoxInsuranceGroupID.TabIndex = 8;
             // 
             // label7
             // 
@@ -193,7 +194,7 @@
             this.textBoxInsuranceID.Location = new System.Drawing.Point(176, 187);
             this.textBoxInsuranceID.Name = "textBoxInsuranceID";
             this.textBoxInsuranceID.Size = new System.Drawing.Size(194, 22);
-            this.textBoxInsuranceID.TabIndex = 23;
+            this.textBoxInsuranceID.TabIndex = 7;
             // 
             // label8
             // 
@@ -209,7 +210,7 @@
             this.textBoxPatientID.Location = new System.Drawing.Point(157, 40);
             this.textBoxPatientID.Name = "textBoxPatientID";
             this.textBoxPatientID.Size = new System.Drawing.Size(213, 22);
-            this.textBoxPatientID.TabIndex = 33;
+            this.textBoxPatientID.TabIndex = 2;
             // 
             // label9
             // 
@@ -220,11 +221,22 @@
             this.label9.TabIndex = 32;
             this.label9.Text = "Patient ID";
             // 
+            // buttonLoadCreatedPatient
+            // 
+            this.buttonLoadCreatedPatient.Location = new System.Drawing.Point(202, 304);
+            this.buttonLoadCreatedPatient.Name = "buttonLoadCreatedPatient";
+            this.buttonLoadCreatedPatient.Size = new System.Drawing.Size(168, 37);
+            this.buttonLoadCreatedPatient.TabIndex = 33;
+            this.buttonLoadCreatedPatient.Text = "Load This Patient";
+            this.buttonLoadCreatedPatient.UseVisualStyleBackColor = true;
+            this.buttonLoadCreatedPatient.Click += new System.EventHandler(this.buttonLoadCreatedPatient_Click);
+            // 
             // NewPatient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(382, 353);
+            this.Controls.Add(this.buttonLoadCreatedPatient);
             this.Controls.Add(this.textBoxPatientID);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBoxInsuranceType);
@@ -248,7 +260,7 @@
             this.Name = "NewPatient";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Create Patient File";
+            this.Text = "Create/Edit Patient File";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,5 +287,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBoxPatientID;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button buttonLoadCreatedPatient;
     }
 }

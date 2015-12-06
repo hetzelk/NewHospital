@@ -43,9 +43,18 @@ namespace Hospital
 
             frontdesk.retrieveAll(name, patientid, birthdate, gender, phonenumber, insuranceid, insurancegroupid, insurancetype, insuranceprovider);
 
-            //WriteToXml write = new WriteToXml();
-            //write.writeToXml();
-            //after create patient is pressed, load the "load patient" form, then go into appointments
+        }
+
+        private void buttonLoadCreatedPatient_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            loadThisPatient();
+        }
+
+        public void loadThisPatient()
+        {
+            LoadPatient loadpat = new LoadPatient();
+            loadpat.Show();
         }
     }
 }

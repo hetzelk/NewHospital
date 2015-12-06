@@ -12,3 +12,5 @@ C:\Users\Keith Hetzel\Documents\GitHub\Hospital\Hospital\bin\Debug\Hospital.pdb
 C:\Users\Keith Hetzel\Documents\GitHub\Hospital\Hospital\bin\Debug\Hospital.exe
 C:\Users\Keith Hetzel\Documents\GitHub\Hospital\Hospital\obj\Debug\Hospital.exe
 C:\Users\Keith Hetzel\Documents\GitHub\Hospital\Hospital\obj\Debug\Hospital.NewPatient.resources
+C:\Users\Keith Hetzel\Documents\GitHub\NewHospital\Hospital\obj\Debug\Hospital.exe
+C:\Users\Keith Hetzel\Documents\GitHub\NewHospital\Hospital\obj\Debug\Hospital.pdb
