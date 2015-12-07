@@ -92,9 +92,9 @@
             // 
             this.buttonLoad.Location = new System.Drawing.Point(159, 290);
             this.buttonLoad.Name = "buttonLoad";
-            this.buttonLoad.Size = new System.Drawing.Size(211, 23);
+            this.buttonLoad.Size = new System.Drawing.Size(211, 29);
             this.buttonLoad.TabIndex = 5;
-            this.buttonLoad.Text = "Load";
+            this.buttonLoad.Text = "Load for Appointment";
             this.buttonLoad.UseVisualStyleBackColor = true;
             this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
             // 

@@ -12,7 +12,7 @@ namespace Hospital
 {
     public partial class LoadPatient : Form
     {
-        string patientname;
+        //string patientname;
         public LoadPatient()
         {
             InitializeComponent();
@@ -20,22 +20,24 @@ namespace Hospital
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            ReadXmlNames reader = new ReadXmlNames();
-            reader.loadPatientsNames();
             listBoxPatients.Items.Add("This is a patient");
+            printPatients();
         }
 
-        public void printPatients(string PatientName)
+        public void printPatients()
         {
-            listBoxPatients.Items.Add("Keithlol");
-
-            string patientname = PatientName;
-            listBoxPatients.Items.Add(patientname);
+            ReadXmlNames reader = new ReadXmlNames();
+            string element = reader.loadPatientsNames();
+            listBoxPatients.Items.Add(element);
         }
 
         private void buttonLoad_Click(object sender, EventArgs e)
         {
-            printPatients(patientname);
+            //load selected patient
+            this.Hide();
+            AppointmentForm appform = new AppointmentForm();
+            appform.Show();
+            object patient = listBoxPatients.SelectedItem;
         }
     }
 }

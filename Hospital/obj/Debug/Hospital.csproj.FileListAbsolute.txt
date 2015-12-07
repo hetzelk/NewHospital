@@ -14,3 +14,11 @@ C:\Users\Keith Hetzel\Documents\GitHub\Hospital\Hospital\obj\Debug\Hospital.exe
 C:\Users\Keith Hetzel\Documents\GitHub\Hospital\Hospital\obj\Debug\Hospital.NewPatient.resources
 C:\Users\Keith Hetzel\Documents\GitHub\NewHospital\Hospital\obj\Debug\Hospital.exe
 C:\Users\Keith Hetzel\Documents\GitHub\NewHospital\Hospital\obj\Debug\Hospital.pdb
+C:\Users\Keith Hetzel\Documents\GitHub\NewHospital\Hospital\obj\Debug\Hospital.csprojResolveAssemblyReference.cache
+C:\Users\Keith Hetzel\Documents\GitHub\NewHospital\Hospital\obj\Debug\Hospital.AppointmentForm.resources
+C:\Users\Keith Hetzel\Documents\GitHub\NewHospital\Hospital\obj\Debug\Hospital.LoadPatient.resources
+C:\Users\Keith Hetzel\Documents\GitHub\NewHospital\Hospital\obj\Debug\Hospital.NewLoad.resources
+C:\Users\Keith Hetzel\Documents\GitHub\NewHospital\Hospital\obj\Debug\Hospital.NewPatient.resources
+C:\Users\Keith Hetzel\Documents\GitHub\NewHospital\Hospital\obj\Debug\Hospital.csproj.GenerateResource.Cache
+C:\Users\Keith Hetzel\Documents\GitHub\NewHospital\Hospital\bin\Debug\Hospital.exe
+C:\Users\Keith Hetzel\Documents\GitHub\NewHospital\Hospital\bin\Debug\Hospital.pdb

@@ -47,6 +47,12 @@
   <ItemGroup>
     <Compile Include="Ailment.cs" />
     <Compile Include="Appointment.cs" />
+    <Compile Include="AppointmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppointmentForm.Designer.cs">
+      <DependentUpon>AppointmentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Diagnosis.cs" />
     <Compile Include="Doctor.cs" />
     <Compile Include="ExaminationRoom.cs" />
@@ -87,6 +93,9 @@
     <Compile Include="WriteToXml.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AppointmentForm.resx">
+      <DependentUpon>AppointmentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoadPatient.resx">
       <DependentUpon>LoadPatient.cs</DependentUpon>
     </EmbeddedResource>

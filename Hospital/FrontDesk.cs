@@ -32,7 +32,8 @@ namespace Hospital
             string insuranceprovider = InsuranceProvider;
 
             WriteToXml write = new WriteToXml();
-            write.getAllInfo(name, patientid, birthdate, gender, phonenumber, insuranceid, insurancegroupid, insurancetype, insuranceprovider);
+            write.getPatientInfo(name, patientid, birthdate, gender, phonenumber);
+            write.getInsuranceInfo(insuranceid, insurancegroupid, insurancetype, insuranceprovider);
         }
 
         

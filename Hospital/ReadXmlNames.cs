@@ -11,32 +11,36 @@ namespace Hospital
 {
     class ReadXmlNames
     {
-        public void loadPatientsNames()
+        public string loadPatientsNames()
         {
-            //LoadPatient loadpat = new LoadPatient();
-            //loadpat.Show();
+            var path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "//patients/";
+            foreach (string file in Directory.EnumerateFiles(path, "*.xml"))
+            {
 
-            LoadPatient load = new LoadPatient();
-            string keith = "Keith Hetzelll";
-            //load.printPatients();
-            load.printPatients(keith);
-            /*
-            var path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + ("//patient3.xml");
-            //FileStream file = File.Read(path);
-
-            //XmlTextWriter xWriter = new XmlTextWriter(file, Encoding.UTF8);
-            XDocument xDoc = XDocument.Load(path);
-            XmlDocument xmlDoc = new XmlDocument(); // Create an XML document object
-            //xmlDoc.Load(@path); // Load the XML document from the specified file
-
-            XmlNodeList patientname = xmlDoc.GetElementsByTagName("Name");
+                XmlDocument doc = new XmlDocument();
+                doc.Load(file);
+                
+                XmlNodeList PatientNames = doc.GetElementsByTagName("Name");
+                if (PatientNames.Count <= 1)
+                {
+                    // The tag could not be found
+                }
+                else
+                {
+                    string element = PatientNames[0].InnerText;
+                    return element;
+                }
+                
+            }
             
-            //load.printPatients(patientname);
-            */
             
+            string el = "Keith Hetzel";
+            return el;                
         }
     }
 }
+
+#region trial code, might work
 /*
 
 XDocument XMLDoc = XDocument.Load("test.xml");
@@ -50,3 +54,17 @@ Console.WriteLine(Contact.ToString());
 
     */
 
+/*
+                string contents = File.ReadAllText(file);
+                XmlDocument xmlDoc = new XmlDocument();
+                XmlNodeList patientnamelist = xmlDoc.GetElementsByTagName("Name");
+                string name = contents[0].InnerText;
+                //XDocument xDoc = XDocument.Load(path);
+                
+                
+
+                foreach (string element in patientnamelist)
+                {
+                   return(element);
+                }*/
+#endregion
